@@ -1,4 +1,4 @@
-# Primeiro Projeto de Banco de Dados - SQL/PostgreSQL
+# Projeto de Banco de Dados - SQL/PostgreSQL
 
 Desenvolvimento de Primeiro Projeto de Banco de Dados com SQL/PostgreSQL. `Exercício 04, Módulo 01 (SQL).` 
 
@@ -101,6 +101,7 @@ SELECT * FROM public.departamento;
 - Visualização <br>
 ![screenshot](public_departamento_02.png)
 
+<br>
 
 ## Meus Contatos
 
