@@ -56,8 +56,6 @@ SELECT * FROM public.regiao;
 - Visualização <br>
 ![screenshot](public_departamento_01.png)
 
-<br>
-
 - Alterando o tipo de dado da coluna id (serial para integer).
 ```
 ALTER TABLE public.departamento
@@ -67,23 +65,42 @@ ALTER COLUMN id TYPE integer;
 <br>
 
 ### 4ª Etapa
-- Inserir valores na tabela: livros.
+- Inserir valores na tabela: regiao.
 ```
-INSERT INTO public.livros (titulo, autor, ano_publicacao, genero) VALUES 
-    ('Dom Quixote', 'Miguel de Cervantes', 1605, 'Romance'),
-    ('1984', 'George Orwell', 1949, 'Ficção Distópica'),
-    ('O Senhor dos Anéis', 'J.R.R. Tolkien', 1954, 'Fantasia'),
-    ('Crime e Castigo', 'Fiódor Dostoiévski', 1866, 'Romance'),
-    ('Orgulho e Preconceito', 'Jane Austen', 1813, 'Romance');
+INSERT INTO public.regiao (nome) VALUES 
+    ('NORTE'),
+    ('CENTRO'),
+    ('SUL');
 ```
 
-- Checar valores inseridos na tabela: livros.
+- Checar valores inseridos na tabela: regiao.
 ```
-SELECT * FROM public.livros;
+SELECT * FROM public.regiao;
 ```
 
 - Visualização <br>
-![screenshot](image-02.png)
+![screenshot](public_regiao_02.png)
+
+<br>
+
+### 5ª Etapa
+- Inserir valores na tabela: departamento.
+```
+INSERT INTO public.departamento (id, nome, id_regiao) VALUES 
+    (10, 'VENDAS', 1),
+    (20, 'OPERAÇÕES', 1),
+    (30, 'ADMINISTRATIVO', 2),
+    (40, 'FINANCEIRO', 3);
+```
+
+- Checar valores inseridos na tabela: departamento.
+```
+SELECT * FROM public.departamento;
+```
+
+- Visualização <br>
+![screenshot](public_departamento_02.png)
+
 
 ## Meus Contatos
 
