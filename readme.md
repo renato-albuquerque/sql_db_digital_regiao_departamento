@@ -36,6 +36,29 @@ SELECT * FROM public.regiao;
 <br>
 
 ### 3ª Etapa
+- Criar a tabela: departamento.
+```
+CREATE TABLE IF NOT EXISTS public.departamento (
+    id serial NOT NULL,
+    nome character varying,
+    id_regiao integer,
+    CONSTRAINT departamento_pkey PRIMARY KEY (id),
+    CONSTRAINT departamento_id_regiao_fkey FOREIGN KEY (id_regiao)
+        REFERENCES public.regiao (id)
+);    
+```
+
+- Checar as colunas e tipos de dados que foram criados.
+```
+SELECT * FROM public.regiao;
+```
+
+- Visualização <br>
+![screenshot](public_departamento_01.png)
+
+<br>
+
+### 3ª Etapa
 - Inserir valores na tabela: livros.
 ```
 INSERT INTO public.livros (titulo, autor, ano_publicacao, genero) VALUES 
