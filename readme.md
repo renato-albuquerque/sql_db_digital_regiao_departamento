@@ -58,7 +58,15 @@ SELECT * FROM public.regiao;
 
 <br>
 
-### 3ª Etapa
+- Alterando o tipo de dado da coluna id (serial para integer).
+```
+ALTER TABLE public.departamento
+ALTER COLUMN id TYPE integer;
+```
+
+<br>
+
+### 4ª Etapa
 - Inserir valores na tabela: livros.
 ```
 INSERT INTO public.livros (titulo, autor, ano_publicacao, genero) VALUES 
